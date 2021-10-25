@@ -97,6 +97,11 @@ if response.status_code == 200:
             name_categories = index_categories[0]
             links_categories = index_categories[1]
             csv_name = ((name_categories + ".csv").replace(" ", "_"))
+
+            folder_csv_file = "./folder_csv_file"
+            os.makedirs("folder_csv_file", exist_ok=True)
+            csv_name = f"{folder_csv_file}/{csv_name}"
+
             # Création des fichiers .csv
             with open(csv_name, "w", newline="", encoding="utf8") as csv_files:
                 csv_writer = csv.writer(csv_files)
@@ -124,15 +129,12 @@ if response.status_code == 200:
 
 ##################-- Écriture des variables dans les fichiers csv --##################
 
-                    folder_csv_file = "./folder_csv_file"
-                    os.makedirs("folder_csv_file", exist_ok=True)
-
                     csv_writer.writerow([name_categories, links_categories,
                                          title_book, link_book, cover_book,
                                          UPC, product_type, price_excl_tax, price_incl_tax, tax,
                                          available_in_stock, number_of_review, synopsis])
 
-############-- Téléchargement des images dans le dossier image_of_book --#############
+#########-- Téléchargement des images dans le dossier folder_image_of_book --#########
 
                     folder_image_of_book = "./folder_image_of_book"
                     os.makedirs("folder_image_of_book", exist_ok=True)
@@ -140,5 +142,6 @@ if response.status_code == 200:
                     response = requests.get(cover_book, allow_redirects=True)
                     pictures_file = (str(title_book))
                     pictures_name = ''.join(filter(str.isalnum, pictures_file))
+                    pictures_name = f"{folder_image_of_book}/{pictures_name}"
                     with open(pictures_name + ".jpg", "wb") as file:
                         file.write(response.content)
