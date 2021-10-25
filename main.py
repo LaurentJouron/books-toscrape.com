@@ -98,6 +98,7 @@ if response.status_code == 200:
             links_categories = index_categories[1]
             csv_name = ((name_categories + ".csv").replace(" ", "_"))
 
+            # Création du dossier et préparation de l'écriture des fichiers .csv dans ce même dossier.
             folder_csv_file = "./folder_csv_file"
             os.makedirs("folder_csv_file", exist_ok=True)
             csv_name = f"{folder_csv_file}/{csv_name}"
@@ -141,7 +142,11 @@ if response.status_code == 200:
 
                     response = requests.get(cover_book, allow_redirects=True)
                     pictures_file = (str(title_book))
+
+                    # Suppression des caractères non alpha-numérique (isalnum()).
                     pictures_name = ''.join(filter(str.isalnum, pictures_file))
+
+                    # Création du dossier et préparation de l'écriture des fichiers .jpg dans ce même dossier.
                     pictures_name = f"{folder_image_of_book}/{pictures_name}"
                     with open(pictures_name + ".jpg", "wb") as file:
                         file.write(response.content)
