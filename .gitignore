@@ -1,1 +1,3 @@
-venv
+books-toscrape/venv
+books-toscrape/folder_image_of_book
+books-toscrape/folder_csv_file

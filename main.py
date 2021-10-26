@@ -101,6 +101,8 @@ if response.status_code == 200:
             # Création du dossier et préparation de l'écriture des fichiers .csv dans ce même dossier.
             folder_csv_file = "./folder_csv_file"
             os.makedirs("folder_csv_file", exist_ok=True)
+
+            # Je me positionne dans le dossier des fichiers CSV pour que ceux-ci soient enregistrés à l'intérieur.
             csv_name = f"{folder_csv_file}/{csv_name}"
 
             # Création des fichiers .csv
@@ -137,6 +139,7 @@ if response.status_code == 200:
 
 #########-- Téléchargement des images dans le dossier folder_image_of_book --#########
 
+                    # Création du dossier image et préparation de l'écriture des fichiers .jpg dans ce même dossier.
                     folder_image_of_book = "./folder_image_of_book"
                     os.makedirs("folder_image_of_book", exist_ok=True)
 
@@ -146,7 +149,7 @@ if response.status_code == 200:
                     # Suppression des caractères non alpha-numérique (isalnum()).
                     pictures_name = ''.join(filter(str.isalnum, pictures_file))
 
-                    # Création du dossier et préparation de l'écriture des fichiers .jpg dans ce même dossier.
+                    # Je me positionne dans le dossier des fichiers jpg pour que ceux-ci soient enregistrés à l'intérieur.
                     pictures_name = f"{folder_image_of_book}/{pictures_name}"
                     with open(pictures_name + ".jpg", "wb") as file:
                         file.write(response.content)
