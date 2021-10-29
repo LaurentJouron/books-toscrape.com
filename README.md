@@ -210,8 +210,30 @@ ___
 </table>
 
 
+<p align="left">Control Mac et Linux .
+
+<table>
+  <tr>
+    <td align="center">
+      <a href=https://www.apple.com/fr/store">
+        <img width="130px"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Sp8Lrrw6oLYyresDDFX4l_CAd_fsTU_XpWNUqtFeu3HYAZ6TaeVJGI22V6pDIugmfD8&usqp=CAU" /><br />
+        <sub><b>Apple</b></sub></a><br />
+      <a href=https://www.apple.com/fr/store" title="Apple" ></a> 
+    </td>
+    <td align="center">
+      <a href=https://www.ubuntu-fr.org/">
+        <img width="130px"
+          src="https://www.ubuntu-fr.org/img/logo.svg" /><br />
+        <sub><b>Linux</b></sub></a><br />
+      <a href=https://www.ubuntu-fr.org/" title="Linux" ></a> 
+    </td>
+  </tr>
+</table>
+
+
 * To start you must clone the project with the following url :
-  * ``git clone https://github.com/LaurentJouron/Books-online.git``
+  * ``git clone https://github.com/LaurentJouron/books-toscrape.com.git``
   
 
 * There is no virtual environment, so you must create it with the command :
@@ -489,8 +511,30 @@ ___
   </tr>
 </table>
 
+<p align="left">Commande Mac et Linux .
+
+<table>
+  <tr>
+    <td align="center">
+      <a href=https://www.apple.com/fr/store">
+        <img width="130px"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Sp8Lrrw6oLYyresDDFX4l_CAd_fsTU_XpWNUqtFeu3HYAZ6TaeVJGI22V6pDIugmfD8&usqp=CAU" /><br />
+        <sub><b>Apple</b></sub></a><br />
+      <a href=https://www.apple.com/fr/store" title="Apple" ></a> 
+    </td>
+    <td align="center">
+      <a href=https://www.ubuntu-fr.org/">
+        <img width="130px"
+          src="https://www.ubuntu-fr.org/img/logo.svg" /><br />
+        <sub><b>Linux</b></sub></a><br />
+      <a href=https://www.ubuntu-fr.org/" title="Linux" ></a> 
+    </td>
+  </tr>
+</table>
+
+
 * Pour commencer il faut cloner le projet grâce à l'url suivante :
-  * ``git clone https://github.com/LaurentJouron/Books-online.git``
+  * ``git clone https://github.com/LaurentJouron/books-toscrape.com.git``
   
   
 * Il n'y a pas d'environnement virtuel, il faut donc le créer avec la commande :
