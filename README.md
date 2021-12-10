@@ -155,7 +155,7 @@ ___________
 
 ___
 
-We used 3 different libraries for this project, here are the explanatory documents:
+We used 4 different libraries for this project, here are the explanatory documents:
   
 <table>
   <tr>
